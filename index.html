@@ -50,7 +50,13 @@
         <section class="hero">
             <div class="container solutions-div">
                 <h1 class="title">Эффективные решения<br> для вашего бизнеса</h1>
-                <button class="btn" type="button">Заказать услугу</button>
+                <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <p></p>
+                        <button data-modal-close type="button"><svg class="modal-button" width="30px" height="30px"><use href="./images/symbol-defs.svg#icon-close"></use></svg></button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -115,13 +121,19 @@
                 <h2 class="under-title">Чем мы занимаемся</h2>
                 <ul class="universal-list">
                     <li class="list img-list">
-                        <img src="./images/work/img-1.jpg" alt="Изображение 1" width="370" height="294">
+                        <div class="img-wrapper"><img  src="./images/work/img-1.jpg" alt="Изображение 1" width="370" height="294">
+                            <p class="desc">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                        </div>
                     </li>
                     <li class="list img-list">
-                        <img src="./images/work/img-2.jpg" alt="Изображение 2" width="370" height="294">
+                        <div class="img-wrapper"><img class="img-text" src="./images/work/img-2.jpg" alt="Изображение 2" width="370" height="294">
+                            <p class="desc">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                        </div>
                     </li>
                     <li class="list img-list">
-                        <img src="./images/work/img-3.jpg" alt="Изображение 3" width="370" height="294">
+                        <div class="img-wrapper"><img class="img-wrapper" src="./images/work/img-3.jpg" alt="Изображение 3" width="370" height="294">
+                        <p class="desc">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -179,28 +191,31 @@
                             <h3 class="under-title-list">Ольга Репина</h3>
                             <p class="job-title" lang="en">Frontend Developer</p>
                             <ul class="team-social">
-                                <li class="list social-team-list"><a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
-                                        aria-label="instagram">
+                                <li class="list social-team-list"><a class="link social-team-link" href=""
+                                        target="_blank" rel="noopener noreferrer" aria-label="instagram">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
                                     </a></li>
                                 <li class="list social-team-list">
-                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
+                                        aria-label="twitter">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="list social-team-list">
-                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
+                                        aria-label="facebook">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="list social-team-list">
-                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
+                                        aria-label="linkedin">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
@@ -208,7 +223,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </li>
 
                     <li class="list team-list">
@@ -217,28 +232,31 @@
                             <h3 class="under-title-list">Николай Тарасов</h3>
                             <p class="job-title" lang="en">Marketing</p>
                             <ul class="team-social">
-                                <li class="list social-team-list"><a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
-                                        aria-label="instagram">
+                                <li class="list social-team-list"><a class="link social-team-link" href=""
+                                        target="_blank" rel="noopener noreferrer" aria-label="instagram">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
                                     </a></li>
                                 <li class="list social-team-list">
-                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
+                                        aria-label="twitter">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="list social-team-list">
-                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
+                                        aria-label="facebook">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="list social-team-list">
-                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
+                                        aria-label="linkedin">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
@@ -254,28 +272,31 @@
                             <h3 class="under-title-list">Михаил Ермаков</h3>
                             <p class="job-title" lang="en">UI Designer</p>
                             <ul class="team-social">
-                                <li class="list social-team-list"><a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
-                                        aria-label="instagram">
+                                <li class="list social-team-list"><a class="link social-team-link" href=""
+                                        target="_blank" rel="noopener noreferrer" aria-label="instagram">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
                                     </a></li>
                                 <li class="list social-team-list">
-                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
+                                        aria-label="twitter">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="list social-team-list">
-                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
+                                        aria-label="facebook">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="list social-team-list">
-                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                                    <a class="link social-team-link" href="" target="_blank" rel="noopener noreferrer"
+                                        aria-label="linkedin">
                                         <svg width="20" height="20">
                                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
@@ -283,7 +304,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </li>
                 </ul>
             </div>
@@ -393,6 +414,7 @@
 
 
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
